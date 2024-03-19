@@ -10,23 +10,33 @@ import { Config } from '@stencil/core';
 import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 
+
 export const config: Config = {
   namespace: 'thirdweb',
   outputTargets: [
     {
-      type: 'dist-custom-elements',
-      customElementsExportBehavior: 'single-export-module',
-      // inlineDynamicImports: true,
-      externalRuntime: false,
-    },
-    {
-      type: 'docs-readme',
-    },
-    {
+      dir: 'docs',
       type: 'www',
-      serviceWorker: null, // disable service workers
+      // comment the following line to disable service workers in production
+      serviceWorker: null,
+      baseUrl: 'https://aliyanmalik.github.io/',
     },
   ],
+  // outputTargets: [
+  //   {
+  //     type: 'dist-custom-elements',
+  //     customElementsExportBehavior: 'single-export-module',
+  //     // inlineDynamicImports: true,
+  //     externalRuntime: false,
+  //   },
+  //   {
+  //     type: 'docs-readme',
+  //   },
+  //   {
+  //     type: 'www',
+  //     serviceWorker: null, // disable service workers
+  //   },
+  // ],
   // outputTargets: [
   //   {
   //     type: 'dist',
