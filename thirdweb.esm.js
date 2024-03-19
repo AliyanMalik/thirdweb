@@ -1,0 +1,2 @@
+import{p as t,b as o}from"./p-ec0c4379.js";export{s as setNonce}from"./p-ec0c4379.js";import{g as e}from"./p-e1255160.js";const r=()=>{const o=import.meta.url;const s={};if(o!==""){s.resourcesUrl=new URL(".",o).href}return t(s)};r().then((async t=>{await e();return o([["p-944f6047",[[1,"my-thirdweb-component"]]]],t)}));
+//# sourceMappingURL=thirdweb.esm.js.map
